@@ -26,7 +26,7 @@ function App() {
       </Link>
       <IconButton ml={8} icon={isLight ? <FaMoon /> : <FaSun />} isRound="true" onClick={toggleColorMode}></IconButton>
       </Flex>
-      <Routes>
+      <Routes basename="/testing-chakra">
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/projects" element={<Projects/>}></Route>
         <Route path="/about" element={<About/>}></Route>
