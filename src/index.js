@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('base'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/testing-chakra">
       <ChakraProvider>
       <ColorModeScript initialColorMode="dark"></ColorModeScript>
         <App />
