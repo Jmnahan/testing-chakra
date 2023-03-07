@@ -4,17 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('base'));
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <ChakraProvider>
       <ColorModeScript initialColorMode="dark"></ColorModeScript>
         <App />
       </ChakraProvider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
